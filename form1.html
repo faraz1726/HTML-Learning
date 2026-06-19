@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio</title>
+</head>
+<body>
+
+    <form action="/server">
+        <div><input type="radio" name="fruit" id="apple" value="apple" />
+            <label for="apple">APPLE</label>
+    
+            <input type="radio" name="fruit" id="banana" value="banana" />
+            <label for="apple">BANANA</label>
+    
+            <input type="radio" name="fruit" id="mango" value="mango" />
+            <label for="apple">MANGO</label>
+        </div>
+        <br/>
+        <div>
+            choose your subjects:
+            <input type="checkbox" id="maths" name="subjects" value="math" />
+            <label for="maths">MATHS</label>
+    
+            <input type="checkbox" id="english" name="subjects" value="eng" />
+            <label for="maths">ENGLISH</label>
+    
+            <input type="checkbox" id="science" name="subjects" value="science"/>
+            <label for="maths">SCIENCE</label>
+        </div>
+        <br/>
+        <div>
+            choose your profession
+            <select name="profession" id="profession">
+                <option>select your option</option>
+                <option value="stu">STUDENT</option>
+                <option value="dev">DEVELOPER</option>
+            </select>
+            
+        </div>
+        <label for="label">select your volume</label>
+        <input type="range" id="vol" name="vol" min="0" max="100" step="10" value="70"/>
+        <br/>
+        <label for="feedback" >give your valuable feedback: </label>
+        <textarea id="feedback" name="feedback" rows="10" cols="80"></textarea>
+        <button>submit</button>
+    </form>
+
+
+    <hr/>
+    <form action="/server">
+        <label for="name">Enter Your Name : </label>
+        <input type="text" placeholder="enter your name" name="name" id="name" />
+        <br/>
+
+        Sex :
+        <label for="male">MALE</label>
+        <input type="radio" name="gender" id="male" value="male" />
+
+        <label for="female">FEMALE</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <br/>
+
+        country:
+        <select name="country" id="country">
+            <option>Select an option</option>
+            <option value="ind">INDIA</option>
+            <option value="aus">AUSTRALIA</option>
+            <option value="eur">EUROPE</option>
+            <option value="argen">ARGENTINA</option>
+            <option value="usa">AMERICA</option>
+            <option value="can">CANADA</option>
+            <option value="fran">FRANCE</option>
+            <option value="swit">SWITZERLAND</option>
+            <option value="hong">HONGKONG</option>
+        </select>
+        <br/>
+
+        <label for="feedback">Message:</label>
+        <textarea id="feedback" name="feedback" value="feedback" rows="10" cols="50"></textarea>
+        <br/>
+        
+        <input type="checkbox" id="newsletter" name="newsletter"/>
+        <label for="newsletter">Subscribe?</label>
+        
+
+        <button>Submit</button>
+    </form>
+</html>
